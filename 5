@@ -1,0 +1,19 @@
+import java.util.*;
+
+class KthSmallest {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int[] arr = {7, 10, 4, 3, 20, 15};
+
+        System.out.print("Enter k: ");
+        int k = sc.nextInt();
+
+        Arrays.sort(arr);
+
+        if (k > 0 && k <= arr.length)
+            System.out.println(k + "th smallest element = " + arr[k - 1]);
+        else
+            System.out.println("Invalid k");
+    }
+}
